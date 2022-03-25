@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&family=MonteCarlo&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <title>E-Commerce, IDM & PROGRAMACION 1 Maria Jorgelina Pestalardo</title>
+</head>
+<body>
+  <header>
+    <nav  class="navbar navbar-expand-lg navbar-light bg-light shadow bg-body rounded">
+        <div class="container-fluid">   
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 350px;">
+              <li class="nav-item">
+                <a class="nav-link" data-categoria="0" aria-current="page" href="#inicio" id="filtros">Bienvenidos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-categoria="1" aria-current="page" href="#nuevaColeccion" id="filtros">Nueva Colección</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Trajes de baño
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" data-categoria="2" href="#bikini" id="filtros">Bikini</a></li>
+                  <li><a class="dropdown-item" data-categoria="3" href="#trikini" id="filtros">Trikini</a></li>
+                  <li><a class="dropdown-item" data-categoria="4" href="#enteriza" id="filtros">Enteriza</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-categoria="0" aria-current="page" href="#Limpiarfiltros" id="filtros">Limpiar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand" href="#inicio"> <img src="img/logo.png"></a>
+                <button class="btn btn-outline-warning" type="submit"><i class="bi bi-cart3" id="carrito"></i></button>
+        </div>
+      </nav>
+      <nav class="navbar navbar-light bg-light d-flex justify-content-end">
+        <div class="p-1">
+          <button class="btn btn-warning" type="submit">Productos que van Sumando<i class="bi bi-cart3" id="carritoSumando"></i></button>
+
+        </div>
+      </nav>
+      <div class="d-none">
+        <h1>Fire</h1>
+    </div>
+
+      <div class="container" id="carousel">
+        <div class="row col-12 d-flex justify-content-center mt-4 mb-2 text-center">
+    <h2 id="inicio">Lencería de diseño.</h2>
+    </div>
+    <div class="row col-12  d-flex justify-content-center text-center p-2">
+      <h3>Celebremos nuestros cuerpos!</h3> 
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <picture>
+            <source srcset="img/lenceria-roja.jpg" title="Imagen header" media="(max-width: 450px)" class="d-block w-100" alt="Bikini negro verano 2022" id="carousel">
+            <img src="img/lenceria-naranja.jpg" class="d-block w-100" alt="Lencería Naranja" id="carousel">
+          </picture>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source srcset="img/lenceria-floral-negra.jpg" title="Imagen header" media="(max-width: 450px)" class="d-block w-100" alt="Bikini negro verano 2022" id="carousel">
+          <img src="img/lenceria-azul.jpg" class="d-block w-100" alt="Lencería Azul" id="carousel">
+        </picture>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source srcset="img/maya-enteriza-rayas.jpg" title="Imagen header" media="(max-width: 450px)" class="d-block w-100" alt="Bikini negro verano 2022" id="carousel">
+            <img src="img/bikini-negro.jpg" class="d-block w-100" alt="Bikini negro verano 2022" id="carousel">
+          </picture>
+          
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+      </div>
+
+      <div></div>
+    </header>
+      <div class="row col-12 d-flex justify-content-center mt-4 mb-2 text-center">
+        <p class="h2 mt-2"> Nuestro Catálogo:</p>
+        <div class="contendor-icono">
+          <i class="bi bi-chevron-double-right" id="envios"></i>
+          <i class="bi bi-truck p-3 rounded-circle" id="envios"></i>
+        </div>
+        <div id="banner"></div>
+      
+        <!--HACER EL BANNER acá!-->
+      </div>
+      
+
+
+<main>
+<section id="nueva-coleccion">
+  
+<div class="container-fluid  d-flex flex-wrap justify-content-center" id="primerP">
+  
+</div>
+</section>
+
+
+</section>
+</main>
+    <footer class="bg-light shadow-md" id="contacto">
+      <div>
+        <ul class="d-flex justify-content-center align-items-center">
+          <div class="p-4 h4" > <li><i class="bi bi-envelope"></i></li></div>
+          <div class="p-4 h4"> <li><i class="bi bi-facebook"></i></li></div>
+          <div class="p-4 h4"> <li><i class="bi bi-instagram"></i></li></div>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-center align-items-center"> 
+        <p>Copyright FIRE- 2021. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="parcial2.js"></script>
+    <script src="localStorage.js"></script>
+</body>
+</html>
